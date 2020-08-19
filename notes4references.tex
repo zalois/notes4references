@@ -78,7 +78,7 @@
 \section{关键词}
 	参考文献，引用，Bib\LaTeX{}，\BibTeX{}
 \section{处理参考文献常用的三种方法}
-\LaTeX{}中处理参考文献常用如下三种方法：第三种方法最简单，但是修改起来也是最麻烦；第二种方法是传统方法，正慢慢被第一种方法替代；第一种方法出现时间稍晚些，资料不是特别多，国内研究比较深入的是胡振震，不但写了不少教程\cite{HuShidong20200726,huzhengzheng20200602}，还根据国标gb7714-2015制作了格式文件\cite{HuShidong20200726}。
+\LaTeX{}中处理参考文献常用如下三种方法：第三种方法最简单，但是修改起来也是最麻烦；第二种方法是传统方法，正慢慢被第一种方法替代；第一种方法出现时间稍晚些，资料不是特别多，国内研究比较深入的是胡振震，不但写了不少教程\cite{HuShidong20200726,huzhengzheng20200602,hu_shidong2019}，还根据国标gb7714-2015制作了格式文件\cite{HuShidong20200726}。
 \subsection{方法一：用Bib\LaTeX{}处理}
 笔者最推荐的方法，灵活，强大。\(2006\)年Philipp Lehman编写了Bib\LaTeX{}包\footnote{Copyright © 2006–2012 Philipp Lehman, 2012–2017 Philip Kime, Audrey Boruvka, Joseph Wright, 2018– Philip Kime and Moritz Wemheuer.}，Bib\LaTeX{}包是一个更加灵活的文献处理方式，它不仅支持更多的entry type，而且支持多次加入bib文件，支持多种不同的bib内容书写格式，也支持从远程加入bib文件，支持在文档的任何位置显示参考文献的内容。比如，你可以在论文的每一章后面添加参考文献的显示，用脚注形式显示参考文献等等。从发展的眼光来看，Bib\LaTeX{}是一个比\BibTeX{}更加先进的技术，未来肯定会取代\BibTeX{}。\par
 \BibTeX{}的格式控制文件有两种，一类是参考文献列表格式文件，扩展名为bbx；一类是引用格式文件，扩展名为cbx。这两种文件都是用\LaTeX{}编写的，一般也会有提供下载，也可以自己制作。Bib\LaTeX{}控制参考文献列表显示格式的方式比\BibTeX{}灵活的地方在于，它不仅用格式文件来控制显示格式，还可以通过宏包的参数来实现精细调整控制。\par

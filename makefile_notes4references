@@ -1,0 +1,18 @@
+.PHONY : main clean
+
+NAME = notes4references
+main : $(NAME).pdf
+	xelatex -synctex=-1 -src-specials $(NAME).tex
+	biber -l zh_stroke $(NAME) #中文按笔画排序
+#	bibtex $(NAME).fb
+#	makeindex $(NAME)
+	xelatex -synctex=-1 -src-specials $(NAME).tex
+	xelatex -synctex=-1 -src-specials $(NAME).tex
+clean :
+	rm -v missfont.log \
+		$(NAME).aux $(NAME).bbl $(NAME).blg $(NAME).log \
+		$(NAME).synctex $(NAME).thm $(NAME).aux \
+		$(NAME).idx $(NAME).ilg $(NAME).ind $(NAME).toc \
+		$(NAME).loa $(NAME).lof $(NAME).lot $(NAME).nlo \
+		$(NAME).out $(NAME).nls $(NAME).bcf $(NAME).fdb_latexmk \
+		$(NAME).fls $(NAME).run.xml $(NAME).xdv
