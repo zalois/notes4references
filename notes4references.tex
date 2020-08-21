@@ -158,7 +158,9 @@ style参数对应于两个同名文件，扩展名分别为bbx和cbx。
 \textcolor{blue}{第四步}：在文档中需要显示参考文献的位置，加入打印参考文献列表语句：
 \begin{example}
 \begin{lstlisting}
-\printbibliography[title=参考文献]%title为自定义，可以不带参数，用默认设置
+\printbibliography[heading=bibintoc,title=参考文献]%在目录列表中显示参考文献，title为自定义。
+%可以不带任何参数，用默认设置
+
 \end{lstlisting}
 \end{example}
 \subsection{方法二：用\BibTeX{}处理}
